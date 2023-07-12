@@ -14,7 +14,7 @@ Individual project to learn the basics of React: creation of an app called 'Soun
 
 ## :triangular_flag_on_post: App
 
-- <a href="https://soundwave-react-nine.vercel.app/"> Click here to see the result! </a>
+- <a href="https://soundwave-react-nine.vercel.app/"> App deployed </a>
 
 <img src="./src/assets/app-screenshots/home-screenshot.png" alt="Home page">
 
@@ -28,11 +28,13 @@ Individual project to learn the basics of React: creation of an app called 'Soun
 - Getting started with **Create React App** and **Vite** build tool
 - Creating routes with **React Router**
 - Creating **functional components**
-- JavaScript functionalities: ES6 arrow functions, array mapping, object destructuring, and template literals.
+- **JavaScript functionalities:** ES6 arrow functions, array mapping, object destructuring, template literals...
 - Organizaing the **components** and **pages** with **Atomic Design** principles
 - Using **TypeScript JSX** 
-- Implementing **Material-UI** and **CSS modules** 
-- Enabling **responsive** CSS
+- Implementing **Material-UI** and **CSS modules**
+- Deployment with **Vercel**
+- **ReadMe** customization
+- :hourglass::negative_squared_cross_mark: In progress: **responsive** CSS
 
 
 ## :hammer_and_wrench: Languages and Tools
