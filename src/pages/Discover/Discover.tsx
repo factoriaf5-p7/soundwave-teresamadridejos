@@ -2,7 +2,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { NavBar } from "../../components/NavBar/NavBar";
 import styles from "./Discover.module.css";
 import Albums from "../../assets/covers.jpg";
-import Button, { ButtonProps } from "@mui/material/Button";
+import Button from "@mui/material/Button";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 import MicExternalOnOutlinedIcon from "@mui/icons-material/MicExternalOnOutlined";
 import LayersIcon from "@mui/icons-material/Layers";

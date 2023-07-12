@@ -16,7 +16,7 @@ const footerElements: FooterElement[] = [
 ];
 
 export const Footer = () => {
-  const { footer, footerLeft, footerRight, icon } = styles;
+  const { footer, footerLeft, footerRight} = styles;
 
   return (
     <footer className={footer}>
