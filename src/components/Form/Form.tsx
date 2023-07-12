@@ -3,49 +3,66 @@ import styles from "./Form.module.css";
 import { JoinBtnForm } from "./JoinBtnForm/JoinBtnForm";
 
 export const Form = () => {
+  const { formContainer, typeName, type } = styles;
+
   return (
-    <div className={styles.formContainer}>
+    <div className={formContainer}>
       <Box>
-        <Typography className={styles.typeName}>Name:</Typography>
+        <Typography variant="body1" className={typeName}>
+          Name:
+        </Typography>
         <FormControl>
           <TextField
-            sx={{
-              border: "1px solid #2C2C55",
-              borderRadius: "6px",
-              width: "320px",
-            }}
             fullWidth
             variant="standard"
-            inputProps={{ style: { color: "white" } }}
+            inputProps={{
+              style: {
+                border: "1px solid #2C2C55",
+                borderRadius: "6px",
+                width: "320px",
+                color: "white",
+              },
+            }}
+            required
           />
         </FormControl>
 
-        <Typography className={styles.type}>Email:</Typography>
+        <Typography variant="body1" className={type}>
+          Email:
+        </Typography>
         <FormControl>
           <TextField
-            sx={{
-              border: "1px solid #2C2C55",
-              borderRadius: "6px",
-              width: "320px",
-            }}
             fullWidth
             variant="standard"
-            inputProps={{ style: { color: "white" } }}
+            inputProps={{
+              style: {
+                border: "1px solid #2C2C55",
+                borderRadius: "6px",
+                width: "320px",
+                color: "white",
+              },
+            }}
+            required
           />
         </FormControl>
 
-        <Typography className={styles.type}>Password:</Typography>
+        <Typography variant="body1" className={type}>
+          Password:
+        </Typography>
         <FormControl>
           <TextField
-            sx={{
-              border: "1px solid #2C2C55",
-              borderRadius: "6px",
-              width: "320px",
-            }}
             fullWidth
             type="password"
             variant="standard"
-            inputProps={{ style: { color: "white" } }}
+            inputProps={{
+              style: {
+                border: "1px solid #2C2C55",
+                borderRadius: "6px",
+                width: "320px",
+                color: "white",
+              },
+            }}
+            required
           />
         </FormControl>
       </Box>

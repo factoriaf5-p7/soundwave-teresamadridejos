@@ -4,29 +4,41 @@ import { NavBar } from "../../components/NavBar/NavBar";
 import styles from "./Join.module.css";
 
 export const Join = () => {
+  const {
+    layout,
+    joinContainer,
+    joinContainerLeft,
+    joinContainerRight,
+    title,
+    background,
+    circles,
+    circlePink,
+    circlePurpleSmall,
+  } = styles;
+
   return (
     <>
-      <div className={styles.layout}>
+      <div className={layout}>
         <NavBar />
-        <div className={styles.joinContainer}>
-          <div className={styles.joinContainerLeft}>
-          <h1 className={styles.title}>
+        <main className={joinContainer}>
+          <section className={joinContainerLeft}>
+            <h1 className={title}>
               Join the <h2>fun.</h2>
             </h1>
-          </div>
+          </section>
 
-          <div className={styles.joinContainerRight}>
+          <section className={joinContainerRight}>
             <Form />
-          </div>
+          </section>
 
           <Footer />
-        </div>
+        </main>
       </div>
 
-      <div className={styles.background}></div>
-      <div className={styles.circles}>
-        <div className={styles.circlePink}></div>
-        <div className={styles.circlePurpleSmall}></div>
+      <div className={background}></div>
+      <div className={circles}>
+        <div className={circlePink}></div>
+        <div className={circlePurpleSmall}></div>
       </div>
     </>
   );

@@ -2,39 +2,41 @@ import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
 
-type PageRoutes = {
-  name?: string;
+type PageRoute = {
+  name: string;
   link: string;
   className: string;
-  leftSide?: boolean;
-}[];
+};
+
+type PageRoutes = PageRoute[];
 
 export const NavBar = () => {
+  const { navBar, navBarLeft, navLinks, soundwave, navLink, discover, join } =
+    styles;
+
   const pageRoutes: PageRoutes = [
-    { name: "Discover", link: "/discover", className: "discover" },
-    { name: "Join", link: "/join", className: "join" },
+    { name: "Discover", link: "/discover", className: discover },
+    { name: "Join", link: "/join", className: join },
   ];
 
   return (
-    <div className={styles.navBar}>
-      <div className={styles.navBarLeft}>
+    <nav className={navBar}>
+      <div className={navBarLeft}>
         <img src={logo} alt="Logo" />
-        <Link to="/" className={styles.soundwave}>
+        <Link to="/" className={soundwave}>
           Soundwave
         </Link>
       </div>
 
-      <div className={styles.navLinks}>
+      <ul className={navLinks}>
         {pageRoutes.map(({ name, link, className }) => (
-          <Link
-            key={name}
-            to={link}
-            className={`${styles.navLink} ${styles[className]}`}
-          >
-            {name}
-          </Link>
+          <li key={name}>
+            <Link to={link} className={`${navLink} ${styles[className]}`}>
+              {name}
+            </Link>
+          </li>
         ))}
-      </div>
-    </div>
+      </ul>
+    </nav>
   );
 };

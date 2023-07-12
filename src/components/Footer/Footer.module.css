@@ -1,4 +1,5 @@
-.footer {
+@media only screen and (min-width: 1024px) {
+  .footer {
   background-color: #202027;
   width: 100%;
   position: fixed;
@@ -27,3 +28,17 @@ li {
   width: 70;
   padding-right: 4px;
 }
+
+}
+
+/* Mobile */
+/* 
+@media (min-width: 375px) {
+  .footer {
+    padding-right: 35px;
+  }
+
+  li {
+    font-size: 0.7rem;
+  }
+} */

@@ -10,8 +10,6 @@ import { Discover } from "./pages/Discover/Discover";
 import { Join } from "./pages/Join/Join";
 import { Layout } from "./pages/Layout/Layout";
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",

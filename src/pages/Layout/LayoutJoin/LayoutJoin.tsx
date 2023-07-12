@@ -3,18 +3,28 @@ import { NavBar } from "../../../components/NavBar/NavBar";
 import styles from "./LayoutJoin.module.css";
 
 export const LayoutJoin = () => {
+  const {
+    layout,
+    content,
+    outlet,
+    background,
+    circles,
+    circlePink,
+    circlePurpleSmall,
+  } = styles;
+
   return (
-    <div className={styles.layout}>
-      <div className={styles.content}>
+    <div className={layout}>
+      <div className={content}>
         <NavBar />
-        <div className={styles.outlet}>
+        <div className={outlet}>
           <Outlet />
         </div>
       </div>
-      <div className={styles.background}></div>
-      <div className={styles.circles}>
-        <div className={styles.circlePink}></div>
-        <div className={styles.circlePurpleSmall}></div>
+      <div className={background}></div>
+      <div className={circles}>
+        <div className={circlePink}></div>
+        <div className={circlePurpleSmall}></div>
       </div>
     </div>
   );

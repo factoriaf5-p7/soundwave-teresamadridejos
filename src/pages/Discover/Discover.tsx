@@ -2,87 +2,82 @@ import { Footer } from "../../components/Footer/Footer";
 import { NavBar } from "../../components/NavBar/NavBar";
 import styles from "./Discover.module.css";
 import Albums from "../../assets/covers.jpg";
-import Button from "@mui/material/Button";
+import Button, { ButtonProps } from "@mui/material/Button";
 import ExpandCircleDownOutlinedIcon from "@mui/icons-material/ExpandCircleDownOutlined";
 import MicExternalOnOutlinedIcon from "@mui/icons-material/MicExternalOnOutlined";
 import LayersIcon from "@mui/icons-material/Layers";
 
+type DiscoverButtonProps = {
+  icon: React.ReactNode;
+  text: string;
+};
+
+const DiscoverButton = ({ icon, text }: DiscoverButtonProps) => {
+  return (
+    <Button
+      sx={{
+        backgroundColor: "#211F27",
+        borderRadius: "0",
+      }}
+      variant="contained"
+      className={styles.buttonContainer}
+    >
+      <div>{icon}</div>
+      <div className={styles.buttonText}>{text}</div>
+    </Button>
+  );
+};
+
 export const Discover = () => {
+  const {
+    discoverContainer,
+    discoverContainerLeft,
+    discoverContainerRight,
+    title,
+    buttons,
+    albums,
+  } = styles;
+
   return (
     <>
       <NavBar />
-      <div className={styles.discoverContainer}>
-        <div className={styles.discoverContainerLeft}>
+      <main className={discoverContainer}>
+        <section className={discoverContainerLeft}>
           <div>
-            <h1 className={styles.title}>Discover new music</h1>
+            <h1 className={title}>Discover new music</h1>
           </div>
-          <div className={styles.buttons}>
-            <Button
-              sx={{
-                backgroundColor: "#211F27",
-                borderRadius: "0",
-              }}
-              variant="contained"
-              className={styles.buttonContainer}
-            >
-              <div>
-                <MicExternalOnOutlinedIcon
-                  sx={{
-                    fontSize: "30px",
-                  }}
-                />
-              </div>
-              <div className={styles.buttonText}>Charts</div>
-            </Button>
-            <Button
-              sx={{
-                backgroundColor: "#211F27",
-                borderRadius: "0",
-              }}
-              variant="contained"
-              className={styles.buttonContainer}
-            >
-              <div>
-                <LayersIcon
-                  sx={{
-                    fontSize: "30px",
-                  }}
-                />
-              </div>
-              <div className={styles.buttonText}>Albums</div>
-            </Button>
-            <Button
-              sx={{
-                backgroundColor: "#211F27",
-                borderRadius: "0",
-              }}
-              variant="contained"
-              className={styles.buttonContainer}
-            >
-              <div>
+          <div className={buttons}>
+            <DiscoverButton
+              icon={<MicExternalOnOutlinedIcon sx={{ fontSize: "30px" }} />}
+              text="Charts"
+            />
+            <DiscoverButton
+              icon={<LayersIcon sx={{ fontSize: "30px" }} />}
+              text="Albums"
+            />
+            <DiscoverButton
+              icon={
                 <ExpandCircleDownOutlinedIcon
-                  sx={{
-                    fontSize: "30px",
-                  }}
+                  sx={{ fontSize: "30px" }}
                   className={styles.moreIcon}
                 />
-              </div>
-              <div className={styles.buttonText}>More</div>
-            </Button>
+              }
+              text="More"
+            />
           </div>
 
           <p>
             By joining you can benefit by listening to the latest albums
             released.
           </p>
-        </div>
+        </section>
 
-        <div className={styles.discoverContainerRight}>
-          <img src={Albums} className={styles.albums} alt="Albums" />
-        </div>
+        <section className={discoverContainerRight}>
+          <img src={Albums} className={albums} alt="Albums" />
+        </section>
 
         <Footer />
-      </div>
+      </main>
     </>
   );
 };

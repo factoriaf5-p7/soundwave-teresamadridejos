@@ -43,3 +43,22 @@ a {
   font-weight: 600;
   font-size: 2vh;
 }
+
+/* Mobile */
+
+/* @media (min-width: 375px) {
+  .navBar {
+    left: 0px;
+    width: 355px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navLink {
+    margin-left: 0px;
+  }
+
+  .soundwave {
+    font-size: 20px;
+  }
+} */
