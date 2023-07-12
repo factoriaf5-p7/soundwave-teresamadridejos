@@ -20,6 +20,8 @@ Individual project to learn the basics of React: creation of an app called 'Soun
 
 <img src="./src/assets/app-screenshots/discover-screenshot.png" alt="Discover page">
 
+<img src="./src/assets/app-screenshots/join-screenshot.png" alt="Join page">
+
 ## :woman_technologist: Learnings
 
 - Getting started with **Create React App** and **Vite** build tool

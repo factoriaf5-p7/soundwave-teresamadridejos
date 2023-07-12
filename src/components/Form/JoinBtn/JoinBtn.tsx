@@ -1,12 +1,13 @@
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export const JoinBtnForm = () => {
+export const JoinBtn = () => {
   return (
     <Link to="/join">
       <Button
         variant="contained"
         sx={{
+          width: "320px",
           textTransform: "none",
           borderRadius: 2,
           paddingRight: 3,

@@ -1,6 +1,6 @@
 import { Box, FormControl, TextField, Typography } from "@mui/material";
 import styles from "./Form.module.css";
-import { JoinBtnForm } from "./JoinBtnForm/JoinBtnForm";
+import { JoinBtn } from "./JoinBtn/JoinBtn";
 
 export const Form = () => {
   const { formContainer, typeName, type } = styles;
@@ -66,7 +66,7 @@ export const Form = () => {
           />
         </FormControl>
       </Box>
-      <JoinBtnForm />
+      <JoinBtn />
     </div>
   );
 };

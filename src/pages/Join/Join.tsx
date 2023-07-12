@@ -10,6 +10,7 @@ export const Join = () => {
     joinContainerLeft,
     joinContainerRight,
     title,
+    titlePink,
     background,
     circles,
     circlePink,
@@ -22,9 +23,8 @@ export const Join = () => {
         <NavBar />
         <main className={joinContainer}>
           <section className={joinContainerLeft}>
-            <h1 className={title}>
-              Join the <h2>fun.</h2>
-            </h1>
+            <h1 className={title}>Join the </h1>
+            <h1 className={titlePink}>fun.</h1>
           </section>
 
           <section className={joinContainerRight}>
