@@ -15,8 +15,10 @@ Individual project to learn the basics of React: creation of an app called 'Soun
 ## :triangular_flag_on_post: App
 
 - Link Vercel
-<img src="../soundwave/assets/app-screenshots/home-screenshot" alt="Home page">
-<img src="../soundwave/assets/app-screenshots/discover-screenshot" alt="Discover page">
+<img src="./src/assets/app-screenshots/home-screenshot.png" alt="Home page">
+
+
+<img src="./src/assets/app-screenshots/discover-screenshot.png" alt="Discover page">
 
 ## :woman_technologist: Learnings
 
