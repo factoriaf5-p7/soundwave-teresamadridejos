@@ -1,0 +1,76 @@
+.joinContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.joinContainerLeft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 7rem;
+}
+
+.joinContainerRight {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+}
+
+h2 {
+  color: #bc3a80;
+  font-size: 3rem;
+  padding-left: 2vh;
+  font-weight: 600;
+}
+
+p {
+  color: white;
+}
+
+.layout {
+  position: relative;
+  z-index: 2;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2f303a;
+  z-index: 1;
+}
+
+.circlePink {
+  width: 35rem;
+  height: 35rem;
+  background-color: #412c41;
+  border-radius: 50%;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.circlePurpleSmall {
+  background-color: #303047;
+  border-radius: 50%;
+  width: 28rem;
+  height: 28rem;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

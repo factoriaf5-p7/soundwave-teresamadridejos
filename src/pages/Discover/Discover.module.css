@@ -1,0 +1,55 @@
+.discoverContainer {
+  background-color: #2f303a;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.discoverContainerLeft {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-evenly;
+  margin-right: 2.1875rem;
+}
+
+.discoverContainerRight {
+  display: flex;
+  align-items: center;
+}
+
+.albums {
+  width: 18.75rem;
+}
+
+.title {
+  font-size: 2.8125rem;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-left: 0.625rem;
+  margin-bottom: 0.9375rem;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+.buttonText {
+  text-transform: capitalize;
+}
+
+.moreIcon {
+  transform: rotate(270deg);
+}
