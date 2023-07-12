@@ -14,7 +14,8 @@ Individual project to learn the basics of React: creation of an app called 'Soun
 
 ## :triangular_flag_on_post: App
 
-- Link Vercel
+- <a href="https://soundwave-react-nine.vercel.app/"> Click here to see the result! </a>
+
 <img src="./src/assets/app-screenshots/home-screenshot.png" alt="Home page">
 
 
