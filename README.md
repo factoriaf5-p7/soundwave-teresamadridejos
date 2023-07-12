@@ -22,7 +22,7 @@ Individual project to learn the basics of React: creation of an app called 'Soun
 - Getting started with **Create React App** and **Vite** build tool
 - Creating routes with **React Router**
 - Creating **functional components**
-- **ES6 arrow functions**, **object Destructuring**, conditional rendering using **Ternary Operator**, **spread operator**, **template literals**
+- Using ES6 arrow functions, object destructuring, conditional rendering using ternary operators, spread operators, and template literals.
 - Organizaing the **components** and **pages** with **Atomic Design** principles
 - Using **TypeScript JSX** 
 - Implementing **Material-UI** and **CSS modules** 
