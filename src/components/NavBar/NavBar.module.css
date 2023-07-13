@@ -1,0 +1,64 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 63rem;
+  height: 3rem;
+  left: 17rem;
+  top: 3rem;
+}
+
+.navBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navLink {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-left: 16px;
+  color: white;
+}
+
+.soundwave {
+  font-size: 3vh;
+  font-weight: 300;
+}
+
+.discover {
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+.join {
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  .navBar {
+    width: 100%;
+    left: 0;
+    justify-content: flex-start;
+  }
+
+  .soundwave {
+    font-size: 15px;
+  }
+
+  .discover {
+    font-size: 10px; 
+  }
+
+}
