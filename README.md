@@ -25,7 +25,7 @@ Individual project to learn the basics of React: creation of an app called 'Soun
 
 ## :woman_technologist: Learnings
 
-- Getting started with **Create React App** and **Vite** build tool
+- Using **Vite** 
 - Creating routes with **React Router**
 - Creating **functional components**
 - **JavaScript functionalities:** ES6 arrow functions, array mapping, object destructuring, template literals...
